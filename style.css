@@ -27,15 +27,7 @@ body {
 .container {
   max-width: 375px;
   display: grid;
-  grid-area: 
-    "item1"
-    "item2"
-    "item3"
-    "item4"
-    "item5"
-    "item6"
-    "item7"
-    "item8";
+  grid-area: 1fr;
   gap: 2rem;
   margin: 2em auto;
   padding: 1.5em 1.2em;
@@ -62,6 +54,7 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  margin-bottom: 1em;
 }
 p {
   font-size: 1rem;
@@ -117,10 +110,6 @@ img{
 
 .item3{
   background: var(--ac-yellow);
-}
-
-.item3 h3{
-  margin-bottom: 1em;
 }
 
 .item3 img{
@@ -199,7 +188,7 @@ img{
 
 /* Responsive */
 
-@media screen and (min-width: 480px) {
+@media (width > 480px) {
   .container {
     max-width: 600px;
     grid-template-areas: 
@@ -244,7 +233,7 @@ img{
   
 }
 
-@media screen and (min-width: 768px) {
+@media (width > 768px) {
   .container {
     max-width: 1000px;
     grid-template-areas: 
